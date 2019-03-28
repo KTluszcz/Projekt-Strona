@@ -73,7 +73,8 @@
     padding: 10px;
     text-decoration: none;
     font-family: "Raleway", sans-serif;
-    font-weight: 300;
+    font-weight: 600;
+    letter-spacing: 1px;
     background-color: white;
     color: #22b8c2;
     margin-top: 20px;
@@ -81,19 +82,65 @@
 }
 //ADVERTISMENT
 .adv{
-  background-color: rgb(209, 209, 209);
+  background-color: rgb(223, 223, 223);
 
   .background{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
     
     a{
       text-decoration: none;
       padding: 10px;
     }
   }
+}
+
+//BIO
+.bio{
+  div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 80px 80px;
+
+    h2{
+      margin-top: 10px;
+      font-family: "Raleway", sans-serif;
+      color: black;
+      text-align: center;
+      font-weight: 800;
+      font-size: 18px;
+    }
+
+    p {
+      margin-top: 10px;
+      font-family: "Raleway", sans-serif;
+      color: black;
+      text-align: center;
+      font-weight: 400;
+      font-size: 13px;
+    }
+
+    a {
+      display: inline-block;
+      margin-bottom: 20px;
+      padding: 10px;
+      text-decoration: none;
+      font-family: "Raleway", sans-serif;
+      font-weight: 600;
+      letter-spacing: 1px;
+      font-size: 10px;
+      background-color: #00ffa3;
+      color: rgb(78, 78, 78);
+      margin-top: 20px;
+      text-transform: uppercase;
+      box-shadow: 2px 3px 18px 0px rgba(122,122,122,1);
+  }
+}
 }
 
 //MEDIA
@@ -151,6 +198,10 @@
     padding: 0 15px;
     height: 100vh;
 
+    p{
+      text-align: left;
+    }
+
     a {
       transition: 0.5s;
     }
@@ -160,11 +211,29 @@
     }
   
 
-  div {
+  div{
     align-items: flex-start;
     margin-left: 20px;
   }
+
+  .bio{
+    >div{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 200px 200px;
+
+      a{
+        transition: 0.5s;
+      }
+      a:hover{
+        background-color: #03bb77;
+      }
+  }
 }
+}
+
 @media (min-width: 1200px) {
   .container {
     width: 1140px;

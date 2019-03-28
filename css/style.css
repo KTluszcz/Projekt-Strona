@@ -83,14 +83,15 @@
   padding: 10px;
   text-decoration: none;
   font-family: "Raleway", sans-serif;
-  font-weight: 300;
+  font-weight: 600;
+  letter-spacing: 1px;
   background-color: white;
   color: #22b8c2;
   margin-top: 20px;
 }
 
 .adv {
-  background-color: #d1d1d1;
+  background-color: #dfdfdf;
 }
 
 .adv .background {
@@ -106,11 +107,66 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .adv .background a {
   text-decoration: none;
   padding: 10px;
+}
+
+.bio div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 80px 80px;
+}
+
+.bio div h2 {
+  margin-top: 10px;
+  font-family: "Raleway", sans-serif;
+  color: black;
+  text-align: center;
+  font-weight: 800;
+  font-size: 18px;
+}
+
+.bio div p {
+  margin-top: 10px;
+  font-family: "Raleway", sans-serif;
+  color: black;
+  text-align: center;
+  font-weight: 400;
+  font-size: 13px;
+}
+
+.bio div a {
+  display: inline-block;
+  margin-bottom: 20px;
+  padding: 10px;
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 10px;
+  background-color: #00ffa3;
+  color: #4e4e4e;
+  margin-top: 20px;
+  text-transform: uppercase;
+  -webkit-box-shadow: 2px 3px 18px 0px #7a7a7a;
+          box-shadow: 2px 3px 18px 0px #7a7a7a;
 }
 
 @media (min-width: 576px) {
@@ -168,6 +224,9 @@
     padding: 0 15px;
     height: 100vh;
   }
+  .header-main p {
+    text-align: left;
+  }
   .header-main a {
     -webkit-transition: 0.5s;
     transition: 0.5s;
@@ -180,6 +239,29 @@
         -ms-flex-align: start;
             align-items: flex-start;
     margin-left: 20px;
+  }
+  .header-main .bio > div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 200px 200px;
+  }
+  .header-main .bio > div a {
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  .header-main .bio > div a:hover {
+    background-color: #03bb77;
   }
 }
 
