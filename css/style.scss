@@ -31,44 +31,71 @@
   );
 }
 
-.header-main{
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content: center;
-   padding: 0 15px;
+.header-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 15px;
 
-   img{
-      width: 80%;
-   }
+  img {
+    width: 80%;
+    max-width: 300px;
+  }
 
-   h2{
-      margin-top: 10px;
-      font-family: 'Raleway', sans-serif;
-      color: white;
-      text-align: center;
-      font-weight: 500;
-      font-size: 24px;
-   }
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-   p{
-      margin-top: 10px;
-      font-family: 'Raleway', sans-serif;
-      color: white;
-      text-align: center;
-      font-weight: 300;
-      font-size: 15px;
-   }
+  h2 {
+    margin-top: 10px;
+    font-family: "Raleway", sans-serif;
+    color: white;
+    text-align: center;
+    font-weight: 500;
+    font-size: 24px;
+  }
 
-   a{
-      display: block;
-      margin: 20px auto;
-      width: 60%;
-      height: 60px;
-      background-color: white;
+  p {
+    margin-top: 10px;
+    font-family: "Raleway", sans-serif;
+    color: white;
+    text-align: center;
+    font-weight: 300;
+    font-size: 15px;
+  }
 
-   }
+  a {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 10px;
+    text-decoration: none;
+    font-family: "Raleway", sans-serif;
+    font-weight: 300;
+    background-color: white;
+    color: #22b8c2;
+    margin-top: 20px;
+  }
 }
+//ADVERTISMENT
+.adv{
+  background-color: rgb(209, 209, 209);
+
+  .background{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    a{
+      text-decoration: none;
+      padding: 10px;
+    }
+  }
+}
+
 //MEDIA
 @media (min-width: 576px) {
   .container {
@@ -114,8 +141,30 @@
   .hidden-lg {
     display: none;
   }
-}
 
+  .header-main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: none;
+    padding: 0 15px;
+    height: 100vh;
+
+    a {
+      transition: 0.5s;
+    }
+
+    a:hover {
+      background-color: antiquewhite;
+    }
+  
+
+  div {
+    align-items: flex-start;
+    margin-left: 20px;
+  }
+}
 @media (min-width: 1200px) {
   .container {
     width: 1140px;
@@ -128,4 +177,5 @@
   .hidden-xl {
     display: none;
   }
+}
 }

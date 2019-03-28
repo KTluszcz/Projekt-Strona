@@ -43,11 +43,25 @@
 
 .header-main img {
   width: 80%;
+  max-width: 300px;
+}
+
+.header-main div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .header-main h2 {
   margin-top: 10px;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   color: white;
   text-align: center;
   font-weight: 500;
@@ -56,7 +70,7 @@
 
 .header-main p {
   margin-top: 10px;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   color: white;
   text-align: center;
   font-weight: 300;
@@ -64,11 +78,39 @@
 }
 
 .header-main a {
-  display: block;
-  margin: 20px auto;
-  width: 60%;
-  height: 60px;
+  display: inline-block;
+  margin-bottom: 20px;
+  padding: 10px;
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
   background-color: white;
+  color: #22b8c2;
+  margin-top: 20px;
+}
+
+.adv {
+  background-color: #d1d1d1;
+}
+
+.adv .background {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.adv .background a {
+  text-decoration: none;
+  padding: 10px;
 }
 
 @media (min-width: 576px) {
@@ -108,9 +150,40 @@
   .hidden-lg {
     display: none;
   }
+  .header-main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: none;
+    padding: 0 15px;
+    height: 100vh;
+  }
+  .header-main a {
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  .header-main a:hover {
+    background-color: antiquewhite;
+  }
+  .header-main div {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin-left: 20px;
+  }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 992px) and (min-width: 1200px) {
   .container {
     width: 1140px;
   }
