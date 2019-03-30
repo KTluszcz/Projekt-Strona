@@ -46,7 +46,7 @@
   max-width: 300px;
 }
 
-.header-main div {
+.header-main .inner-main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -59,7 +59,7 @@
           align-items: center;
 }
 
-.header-main h2 {
+.header-main .inner-main > h2 {
   margin-top: 10px;
   font-family: "Raleway", sans-serif;
   color: white;
@@ -68,7 +68,7 @@
   font-size: 24px;
 }
 
-.header-main p {
+.header-main .inner-main > p {
   margin-top: 10px;
   font-family: "Raleway", sans-serif;
   color: white;
@@ -77,7 +77,7 @@
   font-size: 15px;
 }
 
-.header-main a {
+.header-main .inner-main > a {
   display: inline-block;
   margin-bottom: 20px;
   padding: 10px;
@@ -88,13 +88,14 @@
   background-color: white;
   color: #22b8c2;
   margin-top: 20px;
+  -webkit-box-shadow: 2px 3px 15px 0px #7a7a7a;
+          box-shadow: 2px 3px 15px 0px #7a7a7a;
+  -webkit-transition: 0s;
+  transition: 0s;
 }
 
 .adv {
   background-color: #dfdfdf;
-}
-
-.adv .background {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -104,20 +105,23 @@
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-.adv .background a {
+.adv > a {
   text-decoration: none;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
   padding: 10px;
+  border-radius: 5px;
 }
 
-.bio div {
+.bio > div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -131,42 +135,46 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 80px 80px;
+  background-color: white;
+  margin: 60px 80px;
 }
 
-.bio div h2 {
+.bio > div > h2 {
   margin-top: 10px;
   font-family: "Raleway", sans-serif;
   color: black;
   text-align: center;
   font-weight: 800;
-  font-size: 18px;
+  font-size: 24px;
 }
 
-.bio div p {
+.bio > div > p {
   margin-top: 10px;
   font-family: "Raleway", sans-serif;
   color: black;
   text-align: center;
   font-weight: 400;
-  font-size: 13px;
+  font-size: 16px;
 }
 
-.bio div a {
+.bio > div > a {
   display: inline-block;
   margin-bottom: 20px;
   padding: 10px;
   text-decoration: none;
   font-family: "Raleway", sans-serif;
-  font-weight: 600;
+  font-weight: 1000;
   letter-spacing: 1px;
-  font-size: 10px;
+  font-size: 16px;
   background-color: #00ffa3;
   color: #4e4e4e;
   margin-top: 20px;
   text-transform: uppercase;
-  -webkit-box-shadow: 2px 3px 18px 0px #7a7a7a;
-          box-shadow: 2px 3px 18px 0px #7a7a7a;
+  -webkit-box-shadow: 2px 3px 15px 0px #7a7a7a;
+          box-shadow: 2px 3px 15px 0px #7a7a7a;
+  text-align: center;
+  -webkit-transition: 0s;
+  transition: 0s;
 }
 
 @media (min-width: 576px) {
@@ -190,9 +198,6 @@
   }
   .hidden-md {
     display: none;
-  }
-  .tlo {
-    background-color: red;
   }
 }
 
@@ -220,27 +225,29 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    text-align: none;
     padding: 0 15px;
     height: 100vh;
   }
-  .header-main p {
-    text-align: left;
-  }
-  .header-main a {
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
-  }
-  .header-main a:hover {
-    background-color: antiquewhite;
-  }
-  .header-main div {
+  .header-main .inner-main {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
     margin-left: 20px;
   }
-  .header-main .bio > div {
+  .header-main .inner-main p {
+    text-align: left;
+  }
+  .header-main .inner-main a {
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  .header-main .inner-main a:hover {
+    background-color: antiquewhite;
+  }
+  .adv a:hover {
+    background-color: #bbb9b9;
+  }
+  .bio div {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -254,18 +261,24 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin: 200px 200px;
+    margin: 80px 200px;
   }
-  .header-main .bio > div a {
+  .bio div h2 {
+    font-size: 30px;
+  }
+  .bio div p {
+    font-size: 20px;
+  }
+  .bio div a {
     -webkit-transition: 0.5s;
     transition: 0.5s;
   }
-  .header-main .bio > div a:hover {
-    background-color: #03bb77;
+  .bio div a:hover {
+    background-color: #01c27e;
   }
 }
 
-@media (min-width: 992px) and (min-width: 1200px) {
+@media (min-width: 1200px) {
   .container {
     width: 1140px;
   }
