@@ -91,6 +91,7 @@
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
+  padding: 20px 0px;
   
   >a{
     text-decoration: none;
@@ -117,7 +118,7 @@
       color: black;
       text-align: center;
       font-weight: 800;
-      font-size: 24px;
+      font-size: 18px;
     }
 
     >p {
@@ -126,7 +127,7 @@
       color: black;
       text-align: center;
       font-weight: 400;
-      font-size: 16px;
+      font-size: 12px;
     }
 
     >a {
@@ -137,7 +138,7 @@
       font-family: "Raleway", sans-serif;
       font-weight: 1000;
       letter-spacing: 1px;
-      font-size: 16px;
+      font-size: 14px;
       background-color: #00ffa3;
       color: rgb(78, 78, 78);
       margin-top: 20px;
@@ -145,11 +146,53 @@
       box-shadow: 2px 3px 15px 0px rgba(122,122,122,1);
       text-align: center;
       transition: 0s;
+    }
   }
 }
+
+//POSTS
+.posts{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items:center;
+
+  div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80%;
+    padding: 30px 30px;
+    margin-bottom: 30px;
+    background-color: white;
+    box-shadow: 2px 3px 15px 0px rgb(187, 187, 187);
+
+
+    img{
+      height: 20px;
+      margin-right: 10px;
+      color: #00ffa3;
+    }
+
+    h2{
+      font-size: 20px;
+      font-family: "Raleway", sans-serif;
+      font-weight: 1000;
+    }
+
+    p{
+      font-size: 12px;
+      font-family: "Raleway", sans-serif;
+      font-weight: 400;
+      margin-top: 10px;
+      line-height: 24px;
+    }
+  }
 }
 
 //MEDIA
+
+//576PX
 @media (min-width: 576px) {
   .container {
     width: 540px;
@@ -164,6 +207,7 @@
   }
 }
 
+//768PX
 @media (min-width: 768px) {
   .container {
     width: 720px;
@@ -179,6 +223,7 @@
  
 }
 
+//992PX
 @media (min-width: 992px) {
   .container {
     width: 960px;
@@ -230,7 +275,8 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      margin: 80px 200px;
+      margin: 10px 120px;
+      padding: 50px 200px;
 
       h2{
         font-size: 30px;
@@ -248,8 +294,28 @@
       }
     }
   }
+
+  .posts{
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 500px;
+
+    div{
+      width: 30%;
+      transition: 0.5s;
+    
+      p{
+        font-size: 16px;
+      }
+    }
+
+    div:hover{
+      margin-bottom: -30px;
+    }
+  }
 }
 
+//1200PX
 @media (min-width: 1200px) {
   .container {
     width: 1140px;

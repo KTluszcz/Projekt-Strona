@@ -111,6 +111,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 20px 0px;
 }
 
 .adv > a {
@@ -145,7 +146,7 @@
   color: black;
   text-align: center;
   font-weight: 800;
-  font-size: 24px;
+  font-size: 18px;
 }
 
 .bio > div > p {
@@ -154,7 +155,7 @@
   color: black;
   text-align: center;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 12px;
 }
 
 .bio > div > a {
@@ -165,7 +166,7 @@
   font-family: "Raleway", sans-serif;
   font-weight: 1000;
   letter-spacing: 1px;
-  font-size: 16px;
+  font-size: 14px;
   background-color: #00ffa3;
   color: #4e4e4e;
   margin-top: 20px;
@@ -175,6 +176,60 @@
   text-align: center;
   -webkit-transition: 0s;
   transition: 0s;
+}
+
+.posts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.posts div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 80%;
+  padding: 30px 30px;
+  margin-bottom: 30px;
+  background-color: white;
+  -webkit-box-shadow: 2px 3px 15px 0px #bbbbbb;
+          box-shadow: 2px 3px 15px 0px #bbbbbb;
+}
+
+.posts div img {
+  height: 20px;
+  margin-right: 10px;
+  color: #00ffa3;
+}
+
+.posts div h2 {
+  font-size: 20px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 1000;
+}
+
+.posts div p {
+  font-size: 12px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  margin-top: 10px;
+  line-height: 24px;
 }
 
 @media (min-width: 576px) {
@@ -261,7 +316,8 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin: 80px 200px;
+    margin: 10px 120px;
+    padding: 50px 200px;
   }
   .bio div h2 {
     font-size: 30px;
@@ -275,6 +331,27 @@
   }
   .bio div a:hover {
     background-color: #01c27e;
+  }
+  .posts {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    height: 500px;
+  }
+  .posts div {
+    width: 30%;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  .posts div p {
+    font-size: 16px;
+  }
+  .posts div:hover {
+    margin-bottom: -30px;
   }
 }
 
