@@ -95,7 +95,7 @@
 }
 
 .adv {
-  background-color: #dfdfdf;
+  background-color: #f3f3f3;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -145,7 +145,7 @@
   font-family: "Raleway", sans-serif;
   color: black;
   text-align: center;
-  font-weight: 800;
+  font-weight: 600;
   font-size: 18px;
 }
 
@@ -232,6 +232,42 @@
   line-height: 24px;
 }
 
+.products div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+  margin: 60px 80px;
+}
+
+.products div h2 {
+  margin-top: 10px;
+  font-family: "Raleway", sans-serif;
+  color: black;
+  text-align: center;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.products div p {
+  margin-top: 10px;
+  font-family: "Raleway", sans-serif;
+  color: black;
+  text-align: center;
+  font-weight: 400;
+  font-size: 12px;
+}
+
 @media (min-width: 576px) {
   .container {
     width: 540px;
@@ -281,7 +317,7 @@
         -ms-flex-pack: center;
             justify-content: center;
     padding: 0 15px;
-    height: 100vh;
+    height: 500px;
   }
   .header-main .inner-main {
     -webkit-box-align: start;
@@ -303,19 +339,6 @@
     background-color: #bbb9b9;
   }
   .bio div {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     margin: 10px 120px;
     padding: 50px 200px;
   }
@@ -352,6 +375,16 @@
   }
   .posts div:hover {
     margin-bottom: -30px;
+  }
+  .products div {
+    margin: 10px 120px;
+    padding: 50px 200px;
+  }
+  .products div h2 {
+    font-size: 30px;
+  }
+  .products div p {
+    font-size: 20px;
   }
 }
 
