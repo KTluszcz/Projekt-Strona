@@ -112,6 +112,8 @@
       -ms-flex-align: center;
           align-items: center;
   padding: 20px 0px;
+  -webkit-box-shadow: 0px 0px 30px 15px rgba(136, 136, 136, 0.75);
+          box-shadow: 0px 0px 30px 15px rgba(136, 136, 136, 0.75);
 }
 
 .adv > a {
@@ -136,7 +138,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: white;
+  background-color: transparent;
   margin: 60px 80px;
 }
 
@@ -343,10 +345,10 @@
     padding: 50px 200px;
   }
   .bio div h2 {
-    font-size: 30px;
+    font-size: 35px;
   }
   .bio div p {
-    font-size: 20px;
+    font-size: 25px;
   }
   .bio div a {
     -webkit-transition: 0.5s;
@@ -381,10 +383,10 @@
     padding: 50px 200px;
   }
   .products div h2 {
-    font-size: 30px;
+    font-size: 35px;
   }
   .products div p {
-    font-size: 20px;
+    font-size: 25px;
   }
 }
 

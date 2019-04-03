@@ -92,6 +92,7 @@
   justify-content: space-evenly;
   align-items: center;
   padding: 20px 0px;
+  box-shadow: 0px 0px 30px 15px rgba(136, 136, 136, 0.75);
   
   >a{
     text-decoration: none;
@@ -109,7 +110,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: white;
+    background-color: transparent;
     margin: 60px 80px;
     
     >h2{
@@ -305,11 +306,11 @@
       padding: 50px 200px;
 
       h2{
-        font-size: 30px;
+        font-size: 35px;
       }
 
       p{
-        font-size: 20px;
+        font-size: 25px;
       }
 
       a{
@@ -346,11 +347,11 @@
       padding: 50px 200px;
 
       h2{
-        font-size: 30px;
+        font-size: 35px;
       }
 
       p{
-        font-size: 20px;
+        font-size: 25px;
       }
     }
   }
