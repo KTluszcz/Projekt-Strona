@@ -95,7 +95,9 @@
 }
 
 .adv {
-  background-color: #f3f3f3;
+  background: #d9d7d6;
+  background: -webkit-gradient(linear, left top, left bottom, from(#d9d7d6), to(#f2efed));
+  background: linear-gradient(to bottom, #d9d7d6, #f2efed);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -328,25 +330,41 @@
 .gallery .pallets .sidepictures .pic1 {
   height: 80px;
   width: 45%;
-  background-color: #e1a87b;
+  -webkit-box-shadow: 2px 3px 50px 0px #b3b3b3;
+          box-shadow: 2px 3px 50px 0px #b3b3b3;
+  background: #e5a471;
+  background: -webkit-gradient(linear, left top, left bottom, from(#e5a471), to(#e6b893));
+  background: linear-gradient(to bottom, #e5a471, #e6b893);
 }
 
 .gallery .pallets .sidepictures .pic2 {
   height: 80px;
   width: 45%;
-  background-color: #aca3a6;
+  -webkit-box-shadow: 2px 3px 50px 0px #b3b3b3;
+          box-shadow: 2px 3px 50px 0px #b3b3b3;
+  background: #aca3a7;
+  background: -webkit-gradient(linear, left top, left bottom, from(#aca3a7), to(#d2c9cc));
+  background: linear-gradient(to bottom, #aca3a7, #d2c9cc);
 }
 
 .gallery .pallets .sidepictures .pic3 {
   height: 80px;
   width: 45%;
-  background-color: #c1f0ba;
+  -webkit-box-shadow: 2px 3px 50px 0px #b3b3b3;
+          box-shadow: 2px 3px 50px 0px #b3b3b3;
+  background: #c2f0ba;
+  background: -webkit-gradient(linear, left top, left bottom, from(#c2f0ba), to(#daf5d6));
+  background: linear-gradient(to bottom, #c2f0ba, #daf5d6);
 }
 
 .gallery .pallets .sidepictures .pic4 {
   height: 80px;
   width: 45%;
-  background-color: #8da889;
+  -webkit-box-shadow: 2px 3px 50px 0px #b3b3b3;
+          box-shadow: 2px 3px 50px 0px #b3b3b3;
+  background: #8da889;
+  background: -webkit-gradient(linear, left top, left bottom, from(#8da889), to(#c0cabf));
+  background: linear-gradient(to bottom, #8da889, #c0cabf);
 }
 
 .gallery .pallets .centerpicture {
@@ -365,7 +383,12 @@
 .gallery .pallets .centerpicture .pic5 {
   width: 45%;
   height: 200px;
+  -webkit-box-shadow: 0px 0px 50px 0px #b3b3b3;
+          box-shadow: 0px 0px 50px 0px #b3b3b3;
   background-color: #e1ddda;
+  background: #e1ddda;
+  background: -webkit-gradient(linear, left top, left bottom, from(#e1ddda), to(#f3f3f3));
+  background: linear-gradient(to bottom, #e1ddda, #f3f3f3);
 }
 
 .gallery > a {
@@ -474,8 +497,8 @@
     text-align: left;
   }
   .header-main .inner-main a {
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
   }
   .header-main .inner-main a:hover {
     background-color: antiquewhite;
@@ -494,8 +517,8 @@
     font-size: 25px;
   }
   .bio div a {
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
     padding: 20px;
     font-size: 18px;
   }
@@ -575,8 +598,8 @@
     height: 370px;
   }
   .gallery a {
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
     padding: 20px;
     font-size: 18px;
   }
