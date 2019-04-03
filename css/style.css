@@ -112,8 +112,8 @@
       -ms-flex-align: center;
           align-items: center;
   padding: 20px 0px;
-  -webkit-box-shadow: 0px 0px 30px 15px rgba(136, 136, 136, 0.75);
-          box-shadow: 0px 0px 30px 15px rgba(136, 136, 136, 0.75);
+  -webkit-box-shadow: inset 0px 0px 30px 10px rgba(136, 136, 136, 0.75);
+          box-shadow: inset 0px 0px 30px 10px rgba(136, 136, 136, 0.75);
 }
 
 .adv > a {
@@ -249,7 +249,7 @@
       -ms-flex-align: center;
           align-items: center;
   background-color: white;
-  margin: 60px 80px;
+  margin: 20px 80px;
 }
 
 .products div h2 {
@@ -268,6 +268,99 @@
   text-align: center;
   font-weight: 400;
   font-size: 12px;
+}
+
+.gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.gallery .pallets {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.gallery .pallets .sidepictures {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80%;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.gallery .pallets .sidepictures .pic1 {
+  height: 80px;
+  width: 45%;
+  background-color: #e1a87b;
+}
+
+.gallery .pallets .sidepictures .pic2 {
+  height: 80px;
+  width: 45%;
+  background-color: #aca3a6;
+}
+
+.gallery .pallets .sidepictures .pic3 {
+  height: 80px;
+  width: 45%;
+  background-color: #c1f0ba;
+}
+
+.gallery .pallets .sidepictures .pic4 {
+  height: 80px;
+  width: 45%;
+  background-color: #8da889;
+}
+
+.gallery .pallets .centerpicture {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80%;
+}
+
+.gallery .pallets .centerpicture .pic5 {
+  width: 45%;
+  height: 200px;
+  background-color: #e1ddda;
 }
 
 @media (min-width: 576px) {
@@ -291,6 +384,31 @@
   }
   .hidden-md {
     display: none;
+  }
+  .gallery .pallets .sidepictures {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .gallery .pallets .sidepictures .pic1 {
+    width: 30%;
+    height: 120px;
+  }
+  .gallery .pallets .sidepictures .pic2 {
+    width: 30%;
+    height: 120px;
+  }
+  .gallery .pallets .sidepictures .pic3 {
+    width: 30%;
+    height: 120px;
+  }
+  .gallery .pallets .sidepictures .pic4 {
+    width: 30%;
+    height: 120px;
+  }
+  .gallery .pallets .centerpicture .pic5 {
+    width: 30%;
+    height: 240px;
   }
 }
 
@@ -365,7 +483,7 @@
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
-    height: 500px;
+    height: 400px;
   }
   .posts div {
     width: 30%;
@@ -387,6 +505,47 @@
   }
   .products div p {
     font-size: 25px;
+  }
+  .gallery .pallets {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 60%;
+  }
+  .gallery .pallets .sidepictures {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .gallery .pallets .sidepictures .pic1 {
+    width: 90%;
+    height: 180px;
+    margin-bottom: 10px;
+  }
+  .gallery .pallets .sidepictures .pic2 {
+    width: 90%;
+    height: 180px;
+  }
+  .gallery .pallets .sidepictures .pic3 {
+    width: 90%;
+    height: 180px;
+    margin-bottom: 10px;
+  }
+  .gallery .pallets .sidepictures .pic4 {
+    width: 90%;
+    height: 180px;
+  }
+  .gallery .pallets .centerpicture .pic5 {
+    width: 90%;
+    height: 370px;
   }
 }
 
