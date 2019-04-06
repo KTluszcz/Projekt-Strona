@@ -393,7 +393,6 @@
           color: rgb(85, 85, 85);
           font-style: italic;
           margin-bottom: 10px;
-          weight: 100;
         }
 
         > p {
@@ -790,8 +789,7 @@
       flex-direction: row;
       .cytat {
         width: 50%;
-        .profile {
-        }
+        
         .tekst {
           .komentarz {
             width: 350px;
