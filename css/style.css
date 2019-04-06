@@ -411,6 +411,107 @@
   transition: 0s;
 }
 
+.note {
+  background-color: #F6F6F6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 50px;
+}
+
+.note .napis > h2 {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 200;
+  font-family: "Raleway", sans-serif;
+}
+
+.note .napis > p {
+  text-align: center;
+  font-size: 12px;
+  font-weight: 400;
+  font-family: "Raleway", sans-serif;
+  margin-bottom: 50px;
+}
+
+.note .zbior {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.note .zbior .cytat {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px;
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 30px;
+}
+
+.note .zbior .cytat .profile {
+  height: 40px;
+  width: 40px;
+  background-color: #737581;
+  border-radius: 50%;
+}
+
+.note .zbior .cytat .tekst {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: "Raleway", sans-serif;
+  width: 200px;
+  color: black;
+}
+
+.note .zbior .cytat .tekst .komentarz {
+  font-size: 14px;
+  margin-left: 10px;
+  width: 200px;
+  line-height: 22px;
+  color: #555555;
+  font-style: italic;
+  margin-bottom: 10px;
+  weight: 100;
+}
+
+.note .zbior .cytat .tekst > p {
+  margin-left: 10px;
+  font-size: 12px;
+  font-weight: bold;
+  font-family: "Raleway", sans-serif;
+}
+
 @media (min-width: 576px) {
   .container {
     width: 540px;
@@ -457,6 +558,24 @@
   .gallery .pallets .centerpicture .pic5 {
     width: 30%;
     height: 240px;
+  }
+  .note .napis h2 {
+    font-size: 22px;
+  }
+  .note .napis p {
+    font-size: 18px;
+  }
+  .note .zbior .cytat .profile {
+    width: 60px;
+    height: 60px;
+    margin-left: -130px;
+  }
+  .note .zbior .cytat .tekst .komentarz {
+    font-size: 20px;
+    width: 300px;
+  }
+  .note .zbior .cytat .tekst p {
+    font-size: 18px;
   }
 }
 
@@ -605,6 +724,24 @@
   }
   .gallery a:hover {
     background-color: #01c27e;
+  }
+  .note .napis h2 {
+    font-size: 30px;
+  }
+  .note .napis p {
+    font-size: 26px;
+  }
+  .note .zbior {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .note .zbior .cytat {
+    width: 50%;
+  }
+  .note .zbior .cytat .tekst .komentarz {
+    width: 350px;
   }
 }
 
