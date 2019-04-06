@@ -1,0 +1,21 @@
+//ADVERTISMENT
+.adv {
+  background: #d9d7d6;
+  background: -webkit-linear-gradient(top, #d9d7d6, #f2efed);
+  background: -moz-linear-gradient(top, #d9d7d6, #f2efed);
+  background: linear-gradient(to bottom, #d9d7d6, #f2efed);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 20px 0px;
+  box-shadow: inset 0px 0px 30px 10px rgba(136, 136, 136, 0.75);
+
+  > a {
+    text-decoration: none;
+    transition: 0.2s;
+    padding: 10px;
+    border-radius: 5px;
+  }
+}

@@ -1,0 +1,38 @@
+//POSTS
+.posts {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80%;
+    padding: 30px 30px;
+    margin-bottom: 30px;
+    background-color: white;
+    box-shadow: 2px 3px 15px 0px rgb(187, 187, 187);
+
+    img {
+      height: 20px;
+      margin-right: 10px;
+      color: #00ffa3;
+    }
+
+    h2 {
+      font-size: 20px;
+      font-family: "Raleway", sans-serif;
+      font-weight: 1000;
+    }
+
+    p {
+      font-size: 12px;
+      font-family: "Raleway", sans-serif;
+      font-weight: 400;
+      margin-top: 10px;
+      line-height: 24px;
+    }
+  }
+}

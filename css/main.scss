@@ -1,0 +1,31 @@
+//IMPORT
+@import "header";
+@import "advertisement";
+@import "bio";
+@import "posts";
+@import "products";
+@import "gallery";
+@import "comments";
+@import "footer";
+@import "media";
+
+//RESET
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+//CLASSES
+.container-fluid {
+  width: 100%;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.hidden-xs {
+  display: none;
+}

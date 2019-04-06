@@ -1,0 +1,29 @@
+//PRODUCTS
+.products {
+  div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    margin: 20px 80px;
+
+    h2 {
+      margin-top: 10px;
+      font-family: "Raleway", sans-serif;
+      color: black;
+      text-align: center;
+      font-weight: 600;
+      font-size: 18px;
+    }
+
+    p {
+      margin-top: 10px;
+      font-family: "Raleway", sans-serif;
+      color: black;
+      text-align: center;
+      font-weight: 400;
+      font-size: 12px;
+    }
+  }
+}

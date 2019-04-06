@@ -1,0 +1,75 @@
+//COMMENTS
+.note {
+  background-color: #f6f6f6;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 50px;
+
+  .napis {
+    > h2 {
+      text-align: center;
+      font-size: 18px;
+      font-weight: 200;
+      font-family: "Raleway", sans-serif;
+    }
+
+    > p {
+      text-align: center;
+      font-size: 12px;
+      font-weight: 400;
+      font-family: "Raleway", sans-serif;
+      margin-bottom: 50px;
+    }
+  }
+
+  .zbior {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    .cytat {
+      box-sizing: border-box;
+      display: flex;
+      padding: 10px;
+      width: 100%;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 30px;
+
+      .profile {
+        height: 40px;
+        width: 40px;
+        background-color: #737581;
+        border-radius: 50%;
+      }
+
+      .tekst {
+        display: flex;
+        flex-direction: column;
+        font-family: "Raleway", sans-serif;
+        width: 200px;
+        color: black;
+
+        .komentarz {
+          font-size: 14px;
+          margin-left: 10px;
+          width: 200px;
+          line-height: 22px;
+          color: rgb(85, 85, 85);
+          font-style: italic;
+          margin-bottom: 10px;
+        }
+
+        > p {
+          margin-left: 10px;
+          font-size: 12px;
+          font-weight: bold;
+          font-family: "Raleway", sans-serif;
+        }
+      }
+    }
+  }
+}
