@@ -455,41 +455,50 @@
 
     .kontakt2 {
       display: flex;
+      flex-direction: column;
+      justify-content: center;
       align-items: center;
-      justify-content: space-around;
       font-family: "Raleway", sans-serif;
       flex-wrap: wrap;
+      margin-bottom: 60px;
 
       .kolumna1 {
         width: 50%;
-        margin: 10px;
+        margin-bottom: 15px;
 
         > h3 {
           font-size: 20px;
           text-align: center;
           color: white;
+          margin-bottom: 10px;
         }
 
         > p {
-          font-size: 12px;
+          font-size: 16px;
           color: #71737f;
           text-align: center;
         }
       }
 
       nav {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        line-height: 20px;
-        width: 50%;
-        margin: 10px;
+        margin-bottom: 15px;
 
-        > a {
-          color: #1a9c60;
-          font-size: 12px;
-          text-decoration: none;
+        .linki {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          line-height: 20px;
+          width: 50%;
+          margin: 0 auto;
+
+          > a {
+            color: #1a9c60;
+            font-size: 12px;
+            text-decoration: none;
+            margin-bottom: 5px;
+            transition: 0.3s;
+          }
         }
       }
 
@@ -499,6 +508,13 @@
         color: #1a9c60;
         font-size: 12px;
         text-align: center;
+
+        > h2 {
+          font-size: 20px;
+          text-align: center;
+          color: white;
+          margin-bottom: 10px;
+        }
       }
     }
   }
@@ -530,6 +546,7 @@
         color: #1a9c60;
         text-decoration: none;
         padding: 5px;
+        transition: 0.3s;
       }
     }
   }
@@ -789,12 +806,65 @@
       flex-direction: row;
       .cytat {
         width: 50%;
-        
+
         .tekst {
           .komentarz {
             width: 350px;
           }
         }
+      }
+    }
+  }
+
+  .footer {
+    .contact {
+      .kontakt1 {
+        h2 {
+          font-size: 35px;
+        }
+      }
+      .kontakt2 {
+        flex-wrap: nowrap;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-evenly;
+
+        .kolumna1 {
+          width: 250px;
+          h3 {
+            font-size: 25px;
+          }
+        }
+        nav {
+          width: 250px;
+
+          .linki {
+            a {
+              font-size: 16px;
+            }
+            a:hover{
+              color: #44f7b8;
+            }
+          }
+        }
+        .kolumna3 {
+          width: 250px;
+          font-size: 18px;
+          margin: 0;
+        }
+      }
+    }
+    .copyright {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+
+      p {
+        margin-bottom: 0;
+      }
+
+      a:hover{
+        color: #44f7b8;
       }
     }
   }
