@@ -412,7 +412,7 @@
 }
 
 .note {
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -510,6 +510,180 @@
   font-size: 12px;
   font-weight: bold;
   font-family: "Raleway", sans-serif;
+}
+
+.footer .contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #262626;
+  padding-top: 60px;
+}
+
+.footer .contact .kontakt1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+}
+
+.footer .contact .kontakt1 h2 {
+  font-size: 18px;
+  font-weight: 200;
+  font-family: "Raleway", sans-serif;
+  margin-bottom: 30px;
+}
+
+.footer .contact .kontakt1 .button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+  width: 143px;
+  height: 50px;
+  margin-bottom: 30px;
+}
+
+.footer .contact .kontakt1 .button a {
+  display: inline-block;
+  padding: 14px;
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+  font-weight: 1000;
+  letter-spacing: 2px;
+  font-size: 14px;
+  background-color: transparent;
+  color: white;
+  text-align: center;
+  border: 3px;
+  background-color: #262626;
+}
+
+.footer .contact .kontakt2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-family: "Raleway", sans-serif;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.footer .contact .kontakt2 .kolumna1 {
+  width: 50%;
+  margin: 10px;
+}
+
+.footer .contact .kontakt2 .kolumna1 > h3 {
+  font-size: 20px;
+  text-align: center;
+  color: white;
+}
+
+.footer .contact .kontakt2 .kolumna1 > p {
+  font-size: 12px;
+  color: #71737f;
+  text-align: center;
+}
+
+.footer .contact .kontakt2 nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: 20px;
+  width: 50%;
+  margin: 10px;
+}
+
+.footer .contact .kontakt2 nav > a {
+  color: #1a9c60;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.footer .contact .kontakt2 .kolumna3 {
+  width: 50%;
+  margin: 10px;
+  color: #1a9c60;
+  font-size: 12px;
+  text-align: center;
+}
+
+.footer .copyright {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  background-color: #1a1a1a;
+  padding: 30px;
+  font-family: "Raleway", sans-serif;
+}
+
+.footer .copyright > p {
+  color: #71737f;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.footer .copyright .authors {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer .copyright .authors p {
+  color: #71737f;
+}
+
+.footer .copyright .authors a {
+  color: #1a9c60;
+  text-decoration: none;
+  padding: 5px;
 }
 
 @media (min-width: 576px) {

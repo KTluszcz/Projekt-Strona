@@ -331,82 +331,211 @@
 }
 
 //NOTES
-
 .note {
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding-top: 50px;
 
-    .napis {
-      >h2 {
-          text-align: center;
-          font-size: 18px;
-          font-weight: 200;
-          font-family: "Raleway", sans-serif;
-      }
+  .napis {
+    > h2 {
+      text-align: center;
+      font-size: 18px;
+      font-weight: 200;
+      font-family: "Raleway", sans-serif;
+    }
 
-      >p {
-          text-align: center;
-          font-size: 12px;
-          font-weight: 400;
-          font-family: "Raleway", sans-serif;
-          margin-bottom: 50px;
-      }
+    > p {
+      text-align: center;
+      font-size: 12px;
+      font-weight: 400;
+      font-family: "Raleway", sans-serif;
+      margin-bottom: 50px;
+    }
   }
 
-    .zbior {
+  .zbior {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    .cytat {
+      box-sizing: border-box;
       display: flex;
+      padding: 10px;
+      width: 100%;
       flex-wrap: wrap;
-      flex-direction: column;
-      justify-content: space-around;
-      align-items: center;
+      justify-content: center;
+      margin-bottom: 30px;
 
-        .cytat {
-          box-sizing: border-box;
-          display: flex;
-          padding: 10px;
-          width: 100%;
-          flex-wrap: wrap;
-          justify-content: center;
-          margin-bottom: 30px;
-
-          .profile {
-              height: 40px;
-              width: 40px;
-              background-color: #737581;
-              border-radius: 50%;
-          }
-
-          .tekst{
-              display: flex;
-              flex-direction: column;
-              font-family: "Raleway", sans-serif;
-              width: 200px;
-              color: black;
-
-              .komentarz{
-                font-size: 14px;
-                margin-left: 10px;
-                width: 200px;
-                line-height: 22px;
-                color: rgb(85, 85, 85);
-                font-style: italic;
-                margin-bottom: 10px;
-                weight: 100;
-            }
-              
-              >p{
-                  margin-left: 10px;
-                  font-size: 12px;
-                  font-weight: bold;
-                  font-family: "Raleway", sans-serif;
-              }
-          }
+      .profile {
+        height: 40px;
+        width: 40px;
+        background-color: #737581;
+        border-radius: 50%;
       }
+
+      .tekst {
+        display: flex;
+        flex-direction: column;
+        font-family: "Raleway", sans-serif;
+        width: 200px;
+        color: black;
+
+        .komentarz {
+          font-size: 14px;
+          margin-left: 10px;
+          width: 200px;
+          line-height: 22px;
+          color: rgb(85, 85, 85);
+          font-style: italic;
+          margin-bottom: 10px;
+          weight: 100;
+        }
+
+        > p {
+          margin-left: 10px;
+          font-size: 12px;
+          font-weight: bold;
+          font-family: "Raleway", sans-serif;
+        }
+      }
+    }
   }
 }
+
+//FOOTER
+.footer {
+  .contact {
+    display: flex;
+    flex-direction: column;
+    background-color: #262626;
+    padding-top: 60px;
+
+    .kontakt1 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: white;
+
+      h2 {
+        font-size: 18px;
+        font-weight: 200;
+        font-family: "Raleway", sans-serif;
+        margin-bottom: 30px;
+      }
+
+      .button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        width: 143px;
+        height: 50px;
+        margin-bottom: 30px;
+
+        a {
+          display: inline-block;
+          padding: 14px;
+          text-decoration: none;
+          font-family: "Raleway", sans-serif;
+          font-weight: 1000;
+          letter-spacing: 2px;
+          font-size: 14px;
+          background-color: transparent;
+          color: white;
+          text-align: center;
+          border: 3px;
+          background-color: #262626;
+        }
+      }
+    }
+
+    .kontakt2 {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      font-family: "Raleway", sans-serif;
+      flex-wrap: wrap;
+
+      .kolumna1 {
+        width: 50%;
+        margin: 10px;
+
+        > h3 {
+          font-size: 20px;
+          text-align: center;
+          color: white;
+        }
+
+        > p {
+          font-size: 12px;
+          color: #71737f;
+          text-align: center;
+        }
+      }
+
+      nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        line-height: 20px;
+        width: 50%;
+        margin: 10px;
+
+        > a {
+          color: #1a9c60;
+          font-size: 12px;
+          text-decoration: none;
+        }
+      }
+
+      .kolumna3 {
+        width: 50%;
+        margin: 10px;
+        color: #1a9c60;
+        font-size: 12px;
+        text-align: center;
+      }
+    }
+  }
+
+  .copyright {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    background-color: #1a1a1a;
+    padding: 30px;
+    font-family: "Raleway", sans-serif;
+
+      >p {
+      color: #71737f;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .authors {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      p{
+        color: #71737f;
+      }
+      a {
+        color: #1a9c60;
+        text-decoration: none;
+        padding: 5px;
+      }
+    }
+  }
+}
+
 //MEDIA
 
 //576PX
@@ -468,30 +597,29 @@
     }
   }
 
-  .note{
-    .napis{
-      h2{
+  .note {
+    .napis {
+      h2 {
         font-size: 22px;
       }
-      p{
+      p {
         font-size: 18px;
       }
     }
-    .zbior{
-      .cytat{
-
-        .profile{
+    .zbior {
+      .cytat {
+        .profile {
           width: 60px;
           height: 60px;
           margin-left: -130px;
         }
 
-        .tekst{
-          .komentarz{
+        .tekst {
+          .komentarz {
             font-size: 20px;
             width: 300px;
           }
-          p{
+          p {
             font-size: 18px;
           }
         }
@@ -649,23 +777,23 @@
     }
   }
 
-  .note{
-    .napis{
-      h2{
+  .note {
+    .napis {
+      h2 {
         font-size: 30px;
       }
-      p{
+      p {
         font-size: 26px;
       }
     }
-    .zbior{
+    .zbior {
       flex-direction: row;
-      .cytat{
+      .cytat {
         width: 50%;
-        .profile{
+        .profile {
         }
-        .tekst{
-          .komentarz{
+        .tekst {
+          .komentarz {
             width: 350px;
           }
         }
